@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="rap.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Cosc 75</h1> <!-- Replace with your name or logo -->
+        </div>
+        <nav>
+            <ul class="nav-list" id="nav-list">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="overlay"></div> <!-- Background Overlay -->
+    
+        <div class="hero-content">
+            <div class="profile-pic">
+                <img src="ralph.jpg" alt="Profile Picture"> <!-- Replace with your profile picture -->
+            </div>
+            <h1>Hi, I'm Ralph</h1> <!-- Replace with your name -->
+            <p>A passionate third-year Computer Science student, excited about coding and technology.</p>
+            <a href="#about" class="cta-button">View My Work</a> <!-- Call-to-action button -->
+        </div>
+    </section>
+
+        <!-- About Section -->
+<section id="about" class="about-section">
+    <div class="about-content">
+        <div class="about-left">
+            <div class="profile-pic">
+                <img src="ralph.jpg" alt="Profile Picture"> <!-- Replace with your profile picture -->
+            </div>
+        </div>
+        <div class="about-right">
+            <h2>Ralph Francisco</h2> <!-- Replace with your name -->
+            <h3>Computer Science Student</h3>
+            <p>
+                I am currently a third-year Computer Science student with a strong curiosity for technology and software development. As a beginner in programming, I’m eager to learn and grow my skill set by exploring new languages, frameworks, and tools. Through my studies and personal projects, I have started to build a solid foundation in programming concepts, problem-solving, and computational thinking. I thrive on taking on new challenges and continuously strive to improve my understanding of computer science.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <div class="skills-content">
+        <h2>My Skills</h2>
+        <div class="skills-cards">
+            <div class="skill-card">
+                <h3>HTML</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-bar html">
+                        <span class="skill-percent">50%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>CSS</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-bar css">
+                        <span class="skill-percent">55%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>Java</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-bar java">
+                        <span class="skill-percent">40%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3>JavaScript</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-bar javascript">
+                        <span class="skill-percent">45%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Services Section -->
+<section id="services" class="services-section">
+<div class="services-content">
+    <h2>My Services</h2>
+    <div class="skills-content">
+    <div class="services-container">
+        <div class="service-card">
+            <i class="service-icon fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Creating responsive, interactive, and user-friendly websites using HTML, CSS, JavaScript, and modern frameworks.</p>
+        </div>
+        <div class="service-card">
+            <i class="service-icon fa-solid fa-database"></i>
+            <h3>Database Management</h3>
+            <p>Designing, managing, and optimizing databases to ensure efficient data storage and retrieval.</p>
+        </div>
+        <div class="service-card">
+            <i class="service-icon fa-solid fa-code"></i>
+            <h3>Mobile Development</h3>
+            <p>Building cross-platform mobile applications that deliver a seamless user experience on various devices.</p>
+        </div>
+    </div>
+</div> 
+</section>
+
+
+
+
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="contact-content">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or would like to get in touch, feel free to send me a message!</p>
+        
+        <form action="submit_form.php" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+    <!-- Footer Section -->
+<footer id="footer" class="footer-section">
+    <div class="footer-content">
+       
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="footer-social-links">
+            <a href="https://www.facebook.com/RalphFrncsc" target="_blank" aria-label="Facebook" class="footer-icon">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/ralphfrncsc/" target="_blank" aria-label="Instagram" class="footer-icon">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+
+      
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+
+    <script src="rap.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
